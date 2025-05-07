@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0d1c6 0%, #efedec 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    line-height: 1.6;
+}
+body h1{
+    background-image: url(Black\ And\ Gold\ Elegant\ Business\ Name\ Facebook\ Cover\ \(1\).png);
+    color: white;
+}
+header{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+.headerdetails{
+    position:relative;
+    top: -70px;
+    color: white;
+}
+.header {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 200px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+    /* max-width: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+fieldset {
+    border: none;
+    background: #fcfaf8;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+fieldset:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+legend {
+    font-weight: 600;
+    color: #200c01e8;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+}
+
+legend i {
+    color: #200c01e8;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid #dcd5d2;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #200c01e8;
+    box-shadow: 0 0 0 3px rgba(225, 161, 66, 0.15);
+}
+
+.checkboxes,
+.radios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.checkboxes label,
+.radios label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.checkboxes label:hover,
+.radios label:hover {
+    background-color: #cfae75;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #200c01e8;
+    cursor: pointer;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%234a5568' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #200c01e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+button[type="submit"]:hover {
+    background: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    .checkboxes,
+    .radios {
+        grid-template-columns: 1fr;
+    }
+}

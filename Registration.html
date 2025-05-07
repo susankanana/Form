@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>Clubs Registration</title>
+</head>
+<body>
+    <header>
+        <h1 class="header">School Club Registration</h1>
+    <div class="headerdetails">
+        <p>Welcome! We're excited to have you join our vibrant club community. 
+        Please fill in the form below to get started.</p>
+    </div>
+    </header>
+    
+    <form>
+        <fieldset>
+            <legend><i class="fa-solid fa-user"></i> Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="Bsc">Bachelor's degree persued:</label>
+            <input type="text" id="Bsc" name="Bsc" placeholder="Bsc..">
+        </fieldset>
+        <fieldset>
+            <legend> <i class="fa-solid fa-book"></i> Club Preferences</legend>
+      
+            <p><strong>Which club(s) are you interested in?</strong></p>
+            <div class="checkboxes">
+              <label><input type="checkbox" name="clubs" value="science"> Science Club</label>
+              <label><input type="checkbox" name="clubs" value="art"> Art Club</label>
+              <label><input type="checkbox" name="clubs" value="music"> Music Club</label>
+              <label><input type="checkbox" name="clubs" value="drama"> Drama Club</label>
+              <label><input type="checkbox" name="clubs" value="tech"> Tech Club</label>
+            </div><br>
+
+            <p><strong>Preferred Meeting Time:</strong></p>
+            <div class="radios">
+                <label><input type="radio" name="meetingTime" value="morning"> Morning</label>
+                <label><input type="radio" name="meetingTime" value="afternoon"> Afternoon</label>
+                <label><input type="radio" name="meetingTime" value="evening"> Evening</label>
+            </div><br><br>
+            <label for="yearLevel">Select Your Year of Study:</label>
+              <select id="yearLevel" name="yearLevel">
+                  <option value="">-- Please select --</option>
+                  <option value="year1">1st Year</option>
+                  <option value="year2">2nd Year</option>
+                  <option value="year3">3rd Year</option>
+                  <option value="year4">4th Year</option>
+                  <option value="postgraduate">Postgraduate</option>
+              </select>
+        </fieldset>
+        <fieldset>
+            <legend><i class="fa-solid fa-pen-to-square"></i> Additional Information</legend>
+        <label for="whyJoin">Why do you want to join the club?</label>
+        <textarea id="whyJoin" name="whyJoin" rows="4" placeholder="Let us know what excites you about joining!"></textarea>
+        </fieldset>
+  
+      <button type="submit">Submit Registration</button>
+        
+    </form> 
+</body>
+</html>
